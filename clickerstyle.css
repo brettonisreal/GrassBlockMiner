@@ -1,0 +1,81 @@
+body {
+    background-color: skyblue;
+}
+
+span {
+    color: #477a1e;/*green*/
+}
+
+.sectionLeft {
+    float: left;
+    width: 80%;
+}
+
+.sectionRight {
+    float: right;
+    width: 20%;
+}
+
+.scoreContainer {
+    background-color: #61371f;
+    width: 50%;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.clickerContainer img {
+    position: relative;
+    transition: all .1s ease-in-out;
+}
+
+.clickerContainer img:hover {
+    transform: scale(1.10);
+}
+
+.clickerContainer img:active {
+    transform: scale(0.99);
+}
+
+.shopButton {
+    background-color: #61371f; /*brown*/
+    transition: all .1s ease-in-out;
+    border-radius: 10px;
+    width: 100%;
+    margin: 10px 0px 10px 0px;
+}
+
+.shopButton:hover {
+    background-color: #854f2b;/*brown2*/
+    transition: all .2s ease-in-out;
+}
+
+.shopButton #image {
+    width: 25%;
+}
+
+.shopButton img { /*need this????*/
+    height: 100%;
+    width: 100%;
+}
+
+.shopButton #nameAndCost p { /*targetting p elements, ofc*/
+    margin: 0px;
+    width: 60%;
+}
+
+.shopButton #nameAndCost p:first-of-type {
+    font-size: 24px;
+}
+
+.shopButton #amount {
+    font-size: 48px;
+    color: #595959
+    font-family: cursive;
+    width: 15%;
+}
+
+.unselectable {
+    user-select: none;
+}

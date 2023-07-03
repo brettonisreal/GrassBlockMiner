@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grass Block Miner</title>
+    <link rel="shortcut icon" type="x-icon" href="grassblock.png">
+    <link rel="stylesheet" type="text/css" href="clickerstyle.css" />
+    <npx http-server [path] [options] />
+</head>
+<body>
+    <div class="sectionLeft">
+        <center>
+            <h1 class="unselectable">Grass Block Miner</h1>
+            <div class="scoreContainer unselectable">
+                Grass Blocks Mined: <span id="score">0</span>
+                <br>
+                Blocks Mined Per Second: <span id="updateCPS">0</span>
+            </div>
+            <br>
+            <div class="clickerContainer">
+                <img src="grassblock.png" height="25%" width="25%" onclick="cheeseClicked(clickingPower)">
+            </div>
+            <button onlick="saveGame()">Save Game</button>
+        </center>
+    </div>
+
+    <div class="sectionRight">
+        <table class="shopButton unselectable" onclick="buySteve()">
+            <tr>
+                <td id="image"><img src="woodenshovel.webp" height="525px" width="25px"></td>
+                <td id="nameAndCost">
+                    <p>Wooden Shovel</p>
+                    <p><span id="steveCost">15</span> Blocks</p>
+                </td>
+                <td id="amount"><span id="steveTotal">0</span></td>
+            </tr>
+        </table>
+        <table class="shopButton unselectable" onclick="buyShovel()">
+            <tr>
+                <td id="image"><img src="shovel.webp" height="100%" width="100%"></td>
+                <td id="nameAndCost">
+                    <p>Stone Shovel</p>
+                    <p><span id="shovelCost">100</span> Coins</p>
+                </td>
+                <td id="amount"><span id="shovelTotal">0</span></td>
+            </tr>
+        </table>
+        <table class="shopButton unselectable" onclick="buyIronshovel()">
+            <tr>
+                <td id="image"><img src="ironshovel.png" height="100%" width="100%"></td>
+                <td id="nameAndCost">
+                    <p>Iron Shovel</p>
+                    <p><span id="ironshovelCost">1000</span> Coins</p>
+                </td>
+                <td id="amount"><span id="ironshovelTotal">0</span></td>
+            </tr>
+        </table>
+    </div>
+
+
+<script src="clickergame.js"></script>
+</body>
+</html>
